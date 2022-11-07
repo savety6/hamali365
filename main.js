@@ -1,5 +1,16 @@
 const hiddenElements = document.querySelectorAll('.hidden')
 
+const navItems = document.querySelectorAll('.navItem')
+//add on click function that add the class 'active' to the clicked navItem and remove it from the others
+navItems.forEach((navItem) => {
+    navItem.addEventListener('click', () => {
+        navItems.forEach((navItem) => {
+            navItem.classList.remove('active')
+        })
+        navItem.classList.add('active')
+    })
+})
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -8,7 +19,12 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('show')
         }
     })
-},{threshold: 1})
+},{threshold: 0})
+
+hiddenElements.forEach((element) => {observer.observe(element)})
+
+const galery = document.querySelectorAll('.grid-item')
+galery.forEach((item) => {observer.observe(item)})
 
 
 //scroll event listener
@@ -20,5 +36,3 @@ window.addEventListener('scroll', () => {
         header.classList.remove('sticky')
     }
 })
-
-hiddenElements.forEach((element) => {observer.observe(element)})

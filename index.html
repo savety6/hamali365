@@ -25,20 +25,53 @@
     <div class="navBar">
         <div class="logo"><img src="/images/logo.png" alt="company logo"></div>
         <ul class="nav">
-            <li class="navItem"><a href="#">Начало</a></li>
-            <li class="navItem"><a href="#">Услуги</a></li>
+            <li class="navItem"><a href="#hero">Начало</a></li>
+            <li class="navItem"><a href="#services">Услуги</a></li>
             <li class="navItem"><a href="#">Галерия</a></li>
             <li class="navItem"><a href="#">Контакти</a></li>
         </ul>
     </div>
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="hidden heroText">
             <h1 class="hidden">Товаро-разтоварни услуги</h1>
-            <p class="hidden subtext">Прецизно пренасяне и опаковане на Вашите вещи.</p>
+            <p class="hidden subtext">Предлагаме транспорт на територията на Пловдив и страната! Прецизно пренасяне и опаковане на Вашите вещи.</p>
             <div class="hidden heroBtn subtext">Повече информация</div>
         </div>
         <div class="bigText"></div>
     </div>
-    <section class="services"></section>
+    <section class="services" id="services">
+        <p class="serv-title">услуги</p>
+        <h1 class="hidden serv-title-big">услуги</h1>
+        <!-- 3 cards with text and hover efect -->
+        <div class="cards flex">
+            <div class="hidden card">
+                <div class="card-img">
+                    <img src="/images/moovinIn.jpeg" alt="card image">
+                </div>
+                <div class="card-text">
+                    <h1>Преместване.</h1>
+                    <p>Преместване на апартаменти, складове, офиси и техника. Техника, оборудване и лични вещи ще бъдат застраховани от нас! Поемаме разноски по повреди!</p>
+                </div>
+            </div>
+            <div class="hidden card">
+                <div class="card-img">
+                    <img src="/images/cleaning.jpeg" alt="card image">
+                </div>
+                <div class="card-text">
+                    <h1>Почистване.</h1>
+                    <p>Цялостна услуга къртене, чистене и извозване на строителни отпадъци до сметище.</p>
+                </div>
+            </div>
+            <div class="hidden card">
+                <div class="card-img">
+                    <img src="/images/commerical-movers_2.jpeg" alt="card image">
+                </div>
+                <div class="card-text">
+                    <h1>Товаро-разтоварни услуги.</h1>
+                    <p>Транспорт на мебели, багаж и бяла техника с бус. Превоз на всички видове товари - имущество, стоки, машини, оборудване, скутери, дрехи. Преместване на офиси в Пловдив. Товарни превози от и до Пловдив и околностите с камион.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

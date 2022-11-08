@@ -244,11 +244,14 @@ html {
 /*galery*/
 
 .photo-grid{
+    max-height: 100vh;
+    max-width: 100vw ;
     display: grid;
-    gap: 1rem;
+    gap: 1rem;  
+    align-content: center;
 
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    grid-auto-rows: 20% !important;
+    grid-auto-rows: 30% !important;
 }
 .grid-item{
     animation: itemEntrance 700ms ease-out;

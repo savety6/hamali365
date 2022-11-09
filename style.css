@@ -287,6 +287,123 @@ html {
     object-fit: cover;
     transition: 0.5s;
 }
+.contact-us{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.contact-us .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #ffffff;
+}
+.contact-us .left h1{
+    font-size: 2em;
+    font-weight: 100;
+    color: #031b28;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contact-us .left .social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.contact-us .left .social-media .social-media-item{
+    width: 5rem;
+    height: 5rem;
+    background-color: #e1e9ed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.social-media-item a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2em;
+    transition: 0.5;
+}
+.social-media-item:hover {
+    transform: scale(1.5);
+}
+.social-media-item:hover:nth-child(1) a i{
+    color: #3b5998;
+}
+.social-media-item:hover:nth-child(2) a i{
+    /* instagram */
+    color: #dd2a7b;
+}
+.social-media-item:hover:nth-child(3) a i{
+    /* youtube */
+    color: #ff0000;
+}
+  
+.contact-us .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #e1e9ed;
+}
+.contact-us .right h1{
+    font-size: 2em;
+    font-weight: 100;
+    color: #031b28;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contacts-phone{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #031b28;
+    height: 5vh;
+    color: rgb(255, 255, 255);
+}
+.footer-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.footer-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%; 
+}
+.footer-right a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.5;
+}
+.footer-right a:hover{
+    color: #77d1ff;
+}
+/* media queries */
 @media screen and (min-width: 600px){
     .item-tall {
         grid-row: span 2 / auto;

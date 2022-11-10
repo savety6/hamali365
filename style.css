@@ -9,6 +9,7 @@ html {
 }
 
 .top{
+    z-index: 20;
     position: absolute;
     width: 100%;
     background-color:#031b28;
@@ -399,6 +400,15 @@ html {
     font-size: 4vh;
     color: #fff;
     cursor: pointer;
+}
+.contacts-phone a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contacts-phone a:hover{
+    transform: scale(1.1);
+    color: #031b28;
 }
 /* footer */
 .footer{

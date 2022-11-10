@@ -36,3 +36,17 @@ window.addEventListener('scroll', () => {
         header.classList.remove('sticky')
     }
 })
+
+const toggle = document.querySelector('.bars')
+const nav = document.querySelector('.nav')
+let toggleState = false
+
+toggle.addEventListener('click', () => {
+    if (toggleState) {
+        nav.style.display = 'none'
+        toggleState = !toggleState
+    }else{
+        nav.style.display = 'block'
+        toggleState = !toggleState
+    }
+})
